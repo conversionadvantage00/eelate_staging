@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>eelate — Silicone stoneware for hospitality</title>
+<meta name="description" content="Handmade silicone stoneware in natural stone tones. Elegant, unbreakable, non-slip and insulating tableware for restaurants, hotels and venues.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#F6F3EE">
+<meta property="og:title" content="eelate — Silicone stoneware for hospitality">
+<meta property="og:description" content="Handmade silicone stoneware in natural stone tones. Elegant, unbreakable and non-slip.">
+<meta property="og:image" content="assets/hero-charcoal.webp">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/hero-charcoal.webp">
+<style>
+:root{
+  --ink:#111111;--muted:#5E5E5E;--soft:#6B6B6B;--line:rgba(17,17,17,.12);
+  --paper:#F6F3EE;--card:#EFE9E1;--accent:#E6DED2;
+  --charcoal:#3B3937;--slate:#646B70;--stone:#9C9A94;--sand:#D6CBB4;--terracotta:#B4684A;--clay:#7A5440;--olive:#6A6943;
+  --pad:clamp(22px,4vw,40px);--sec:clamp(96px,12vw,170px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:96px;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:'Manrope',system-ui,sans-serif;color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+input,textarea,button{font:inherit}
+h1,h2,h3,p{margin:0}
+h1 em,h2 em,p em{font-style:normal;font-weight:300}
+.page{overflow-x:clip;background:#fff radial-gradient(42% 38% at 90% 8%,rgba(234,224,206,.55),transparent 70%) fixed,
+  radial-gradient(38% 36% at 4% 82%,rgba(220,222,214,.5),transparent 70%) fixed}
+.wrap{max-width:1320px;margin:0 auto;padding:0 var(--pad)}
+.sec{padding-bottom:var(--sec)}
+.center{text-align:center}
+
+/* type */
+.h-xl{font-weight:600;font-size:clamp(46px,6.6vw,104px);line-height:.98;letter-spacing:-.045em}
+.h-l{font-weight:600;font-size:clamp(40px,5.4vw,84px);line-height:1;letter-spacing:-.045em}
+.h-m{font-weight:600;font-size:clamp(34px,4vw,56px);line-height:1.05;letter-spacing:-.035em}
+.lead{font-size:17px;line-height:1.65;color:var(--muted)}
+.lead strong{color:var(--ink);font-weight:600}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:13px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--soft)}
+.label{font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+.dots{display:flex}.dots span{width:8px;height:8px;border-radius:50%;transition:background-color 1.2s ease}.dots span+span{margin-left:-2px}
+
+/* buttons & links */
+.btn{display:inline-flex;align-items:center;gap:14px;min-height:56px;padding:0 8px 0 28px;border:0;border-radius:999px;background:var(--ink);color:#fff;font-size:15px;font-weight:500;letter-spacing:.01em;text-decoration:none;cursor:pointer;box-shadow:inset 0 1px 0 rgba(255,255,255,.16),0 16px 32px -16px rgba(17,17,17,.6);transition:transform .35s cubic-bezier(.2,.7,.2,1)}
+.btn:hover{transform:translateY(-2px);color:#fff}
+.btn .dot{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:var(--accent);color:var(--ink);transition:transform .35s cubic-bezier(.2,.7,.2,1)}
+.btn:hover .dot{transform:rotate(-45deg)}
+.btn-sm{min-height:44px;padding:0 6px 0 20px;font-size:14px}.btn-sm .dot{width:32px;height:32px}
+.link{display:inline-flex;align-items:center;gap:12px;padding-bottom:8px;border-bottom:1px solid var(--ink);font-size:15px;font-weight:500;text-decoration:none}
+.link svg{transition:transform .3s ease}.link:hover svg{transform:translateX(4px)}
+.actions{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:20px 32px}
+
+/* nav */
+.nav-shell{position:sticky;top:0;z-index:50;padding:18px 24px 0}
+.nav{position:relative;max-width:1180px;margin:0 auto;padding:8px 8px 8px 28px;display:flex;align-items:center;justify-content:space-between;gap:12px;background:rgba(255,255,255,.76);-webkit-backdrop-filter:blur(18px) saturate(160%);backdrop-filter:blur(18px) saturate(160%);border:1px solid rgba(17,17,17,.06);border-radius:999px;box-shadow:inset 0 1px 0 rgba(255,255,255,.9),0 1px 2px rgba(17,17,17,.04),0 20px 44px -24px rgba(17,17,17,.28)}
+.nav-logo{display:flex;align-items:center;min-height:44px}.nav-logo img{height:22px;width:auto}
+.nav-links{display:flex;gap:2px;font-size:14px;font-weight:500}
+.nav-item{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border-radius:999px;text-decoration:none;transition:background-color .25s ease}
+.nav-item:hover{background:rgba(17,17,17,.05)}
+.nav-right{display:flex;align-items:center;gap:4px}
+.mnav{display:none}
+.mnav summary{display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;cursor:pointer;list-style:none}
+.mnav summary::-webkit-details-marker{display:none}
+.mnav[open] summary{background:rgba(17,17,17,.05)}
+.mnav-panel{position:absolute;left:0;right:0;top:calc(100% + 10px);display:flex;flex-direction:column;padding:10px;border-radius:28px;background:#fff;border:1px solid rgba(17,17,17,.06);box-shadow:0 24px 48px -24px rgba(17,17,17,.3)}
+.mnav-panel a{display:flex;align-items:center;min-height:48px;padding:0 18px;border-radius:999px;font-size:16px;font-weight:500;text-decoration:none}
+.mnav-panel a:active,.mnav-panel a:hover{background:rgba(17,17,17,.05)}
+
+/* hero */
+.hero{max-width:1320px;margin:0 auto;padding:88px var(--pad) 140px;text-align:center}
+.hero h1{margin:28px auto 0;max-width:980px}
+.hero .lead{margin:28px auto 0;max-width:520px;font-size:18px;line-height:1.6}
+.hero .actions{margin-top:40px}
+.stage-wrap{max-width:1240px;margin:48px auto 0}
+.stage{position:relative;aspect-ratio:1983/793;overflow:hidden}
+.slide{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply;opacity:0;scale:1.025;transition:opacity 1.6s cubic-bezier(.4,0,.2,1),scale 3s cubic-bezier(.16,.84,.24,1)}
+.slide.on{opacity:1;scale:1}
+.swatches{display:flex;flex-wrap:wrap;justify-content:center;gap:4px;margin-top:12px}
+.swatch{display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 16px;border:0;border-radius:999px;background:transparent;cursor:pointer;font-size:13px;font-weight:500;color:var(--ink);opacity:.45;transition:opacity .4s ease}
+.swatch[aria-pressed="true"],.swatch:hover{opacity:1}
+.swatch .dots span{width:10px;height:10px}.swatch .dots span+span{margin-left:-3px}
+.proof{margin-top:8px;display:inline-flex;align-items:center;gap:14px;font-size:13px;color:var(--soft)}
+.proof::before,.proof::after{content:"";width:32px;height:1px;background:#CFCFCF}
+
+/* statement + benefits */
+.statement{max-width:980px;margin:0 auto;padding:0 var(--pad) 120px;text-align:center}
+.statement p{font-size:clamp(24px,3vw,40px);font-weight:500;line-height:1.3;letter-spacing:-.025em}
+.benefits{max-width:1120px;margin:0 auto;padding:0 var(--pad) var(--sec)}
+.benefits .label{display:block;text-align:center;color:var(--soft);margin-bottom:40px}
+.bgrid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line)}
+.bgrid li{padding:28px 24px 28px 0;border-bottom:1px solid var(--line)}
+.bgrid h3{font-size:18px;font-weight:600;letter-spacing:-.01em}
+.bgrid p{margin-top:6px;font-size:15px;line-height:1.55;color:var(--muted)}
+
+/* story */
+.story-a{position:relative;height:74vw;margin-top:-9vw}
+.story-a img{position:absolute;left:-27vw;top:0;width:170vw;max-width:none;height:auto;mix-blend-mode:multiply}
+.story-a .copy{position:absolute;left:62vw;top:61vw;width:28vw;max-width:400px;z-index:1}
+.story-b{position:relative;min-height:64vw}
+.story-b img{position:absolute;left:-8vw;top:0;width:68vw;height:auto;aspect-ratio:1/1;object-fit:cover;mix-blend-mode:multiply}
+.story-b .copy{position:absolute;left:62vw;top:50%;transform:translateY(-50%);width:30vw;max-width:440px;z-index:1}
+.copy .lead{margin-bottom:28px}
+
+/* collection */
+.cgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:56px 32px;margin-top:72px}
+.card{display:flex;flex-direction:column;gap:12px}
+.card-img{height:260px;display:flex;align-items:flex-end;justify-content:center;padding-bottom:28px}
+.card-img img{max-width:82%;max-height:180px;width:auto;height:auto;filter:drop-shadow(0 26px 22px rgba(17,17,17,.15))}
+.card-head{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.card h3{font-size:18px;font-weight:600}
+.card p{font-size:15px;line-height:1.6;color:var(--muted)}
+.chips{display:flex;gap:5px}.chips span{width:10px;height:10px;border-radius:50%}
+.tag{font-size:13px;color:var(--muted)}
+
+.range{margin-top:110px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:48px 72px;align-items:start}
+.range-intro{display:flex;flex-direction:column;gap:20px;position:sticky;top:120px}
+.range-intro .actions{justify-content:flex-start;margin-top:8px}
+.rtable{width:100%;border-collapse:collapse;font-size:15px}
+.rtable th,.rtable td{padding:18px 12px 18px 0;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.rtable th{font-weight:600;width:42%}
+.rtable td{color:var(--muted);line-height:1.55}
+.rtable tr:first-child th,.rtable tr:first-child td{border-top:1px solid var(--line)}
+
+/* gallery */
+.ghead{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:56px}
+.ghead .lead{max-width:380px}
+.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.gallery img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:28px}
+
+/* colours */
+.colour .lead{margin:20px auto 0;max-width:520px}
+.slist{list-style:none;margin:72px 0 0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-end;gap:32px 20px}
+.slist li{display:flex;flex-direction:column;align-items:center;gap:16px;width:132px}
+.slist .pot{height:124px;display:flex;align-items:flex-end;justify-content:center}
+.slist img{height:108px;width:auto;filter:drop-shadow(0 18px 14px rgba(17,17,17,.12))}
+.slist span{font-size:13px;color:var(--muted)}
+.fine{margin-top:56px;font-size:13px;color:var(--soft)}
+
+/* split sections */
+.split{display:flex;flex-wrap:wrap;align-items:center;gap:56px}
+.split > *{flex:1 1 440px;min-width:0}
+.service-img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:32px}
+.feat{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:40px;margin-top:48px}
+.feat h3{font-size:16px;font-weight:600;margin-bottom:8px}
+.feat p{font-size:15px;line-height:1.6;color:var(--muted)}
+.brand-copy{display:flex;flex-direction:column;gap:24px;padding-left:4%}
+.brand-copy .lead{max-width:420px}
+.brand-art{position:relative;display:flex;justify-content:center;align-items:center;min-height:520px}
+.brand-art::before{content:"";position:absolute;left:20%;top:18%;width:60%;height:64%;border-radius:50%;background:#ECE6DC;filter:blur(90px)}
+.brand-art img{position:relative;width:58%;max-width:420px;height:auto;filter:drop-shadow(0 44px 38px rgba(17,17,17,.18))}
+
+/* jellytot */
+.jelly{border-radius:56px;padding:clamp(48px,7vw,96px) clamp(24px,6vw,88px);background:linear-gradient(135deg,#FBF4DC 0%,#E7F5EF 55%,#EAF1F8 100%);text-align:center}
+.jelly .lead{margin:16px auto 0;max-width:540px}
+.jlist{list-style:none;margin:56px 0 0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:24px 12px}
+.jlist li{display:flex;flex-direction:column;align-items:center;gap:12px;width:112px}
+.jlist img{height:92px;width:auto;filter:drop-shadow(0 16px 12px rgba(17,17,17,.12))}
+.jlist span{font-size:13px;color:var(--muted)}
+
+/* process */
+.steps{list-style:none;margin:64px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:48px;text-align:center}
+.steps li{display:flex;flex-direction:column;align-items:center;gap:12px}
+.steps .n{font-size:14px;font-weight:600;color:var(--soft)}
+.steps h3{font-size:18px;font-weight:600}
+.steps p{max-width:280px;font-size:15px;line-height:1.6;color:var(--muted)}
+
+/* trade */
+.trade{position:relative;background:var(--card);border-radius:56px;padding:clamp(40px,7vw,104px);display:flex;flex-wrap:wrap;gap:64px;overflow:hidden}
+.trade-deco{position:absolute;right:6%;top:-36px;width:120px;height:auto;filter:drop-shadow(0 24px 20px rgba(17,17,17,.12))}
+.trade-copy{flex:1 1 340px;display:flex;flex-direction:column;gap:20px}
+.trade-copy .lead{max-width:380px;color:#4A4A4A}
+.contact{display:flex;flex-direction:column;gap:8px;font-size:15px;padding-top:12px}
+.contact a{text-underline-offset:4px}
+.form{flex:1.4 1 420px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px 32px}
+.form label{display:flex;flex-direction:column;gap:6px;font-size:13px;color:#4A4A4A}
+.form input,.form textarea{min-height:44px;background:transparent;border:0;border-bottom:1px solid rgba(17,17,17,.35);border-radius:0;color:var(--ink);font-size:16px;padding:0 2px}
+.form textarea{padding:10px 2px;resize:vertical}
+.form input:focus,.form textarea:focus{outline:none;border-bottom-color:var(--ink)}
+.form .full{grid-column:1/-1}
+.form .btn .dot{background:#fff}
+
+/* footer */
+.footer{max-width:1320px;margin:0 auto;padding:40px var(--pad) 56px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:24px;font-size:13px;color:var(--muted)}
+.footer-brand{display:flex;align-items:center;gap:20px}.footer-brand img{height:18px;width:auto}
+.footer nav{display:flex;flex-wrap:wrap;gap:12px 28px}.footer nav a{text-decoration:none}.footer nav a:hover{color:var(--ink)}
+
+/* motion (progressive, CSS-only) */
+@keyframes eelIn{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes eelRise{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:none}}
+@keyframes eelTextIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes eelDrift{from{transform:translateX(5vw) scale(1.04)}to{transform:translateX(-3vw) scale(1)}}
+@keyframes eelDriftB{from{transform:translateY(60px) scale(1.05)}to{transform:translateY(-40px) scale(1)}}
+@media (prefers-reduced-motion:no-preference){
+  .in{animation:eelIn 1.2s cubic-bezier(.16,.84,.24,1) both}
+  .d2{animation-delay:.12s}.d3{animation-delay:.24s}.d4{animation-delay:.36s}
+  .stage-wrap.in{animation-duration:1.6s;animation-delay:.45s}
+  @supports (animation-timeline:view()){
+    .reveal{animation:eelRise linear both;animation-timeline:view();animation-range:entry 0% entry 70%}
+    .rtext{animation:eelTextIn linear both;animation-timeline:view();animation-range:entry 5% entry 60%}
+    .drift{animation:eelDrift linear both;animation-timeline:view();animation-range:cover 0% cover 100%}
+    .drift-b{animation:eelDriftB linear both;animation-timeline:view();animation-range:cover 0% cover 100%}
+  }
+}
+
+/* responsive */
+@media (max-width:900px){
+  .story-a{height:auto;margin-top:0}
+  .story-a img{position:relative;left:-27vw}
+  .story-a .copy,.story-b .copy{position:static;transform:none;width:auto;max-width:520px;margin:8px var(--pad) 0}
+  .story-b{min-height:0}
+  .story-b img{position:relative;left:auto;width:112vw;max-width:none;margin-left:-6vw}
+  .range{grid-template-columns:1fr;margin-top:88px}
+  .range-intro{position:static}
+  .bgrid{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:24px}
+  .brand-copy{padding-left:0}
+}
+@media (max-width:820px){
+  .nav-shell{padding:12px 12px 0}
+  .nav{padding:6px 6px 6px 20px}
+  .nav-links{display:none}
+  .mnav{display:block}
+  .nav-logo img{height:18px}
+  .nav .btn-sm{font-size:13px;padding:0 5px 0 16px;gap:10px;white-space:nowrap}
+  .hero{padding:40px var(--pad) 96px}
+  .hero h1{margin-top:20px}
+  .eyebrow{font-size:11px;letter-spacing:.12em;gap:8px}
+  .stage{aspect-ratio:1983/1100}
+  .slide{width:138%;max-width:none;left:-19%}
+}
+@media (max-width:600px){
+  :root{--sec:96px}
+  html{scroll-padding-top:80px}
+  .hero .lead{font-size:17px}
+  .hero .actions{flex-direction:column;gap:22px}
+  .statement{padding-bottom:88px}
+  .bgrid li{padding:22px 12px 22px 0}
+  .bgrid h3{font-size:16px}
+  .bgrid p{font-size:14px}
+  .cgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:40px 16px;margin-top:48px}
+  .card-img{height:170px;padding-bottom:18px}
+  .card-img img{max-height:120px}
+  .card h3{font-size:16px}
+  .card p{font-size:14px}
+  .card-head{flex-wrap:wrap;gap:6px}
+  .rtable th,.rtable td{display:block;width:auto;padding:0;border:0}
+  .rtable tr{display:block;padding:16px 0;border-bottom:1px solid var(--line)}
+  .rtable tr:first-child{border-top:1px solid var(--line)}
+  .rtable tr:first-child th,.rtable tr:first-child td{border-top:0}
+  .rtable td{margin-top:4px}
+  .ghead{margin-bottom:32px}
+  .gallery{gap:10px}
+  .gallery img{border-radius:18px}
+  .slist{margin-top:48px;gap:28px 8px}
+  .slist li{width:calc(33.333% - 6px)}
+  .slist .pot{height:96px}.slist img{height:82px}
+  .split{gap:40px}
+  .split > *{flex-basis:100%}
+  .brand-art{min-height:340px}
+  .jelly{border-radius:36px}
+  .jlist li{width:calc(33.333% - 8px)}
+  .jlist img{height:74px}
+  .steps{margin-top:44px;gap:36px}
+  .trade{border-radius:36px;gap:40px}
+  .trade-deco{display:none}
+  .form{grid-template-columns:1fr;gap:20px}
+  .form .btn{width:100%;justify-content:space-between}
+  .footer{flex-direction:column;align-items:flex-start}
+  .footer nav{gap:0 24px}
+  .footer nav a,.contact a{display:inline-flex;align-items:center;min-height:44px}
+  .contact{gap:0}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- Nav -->
+<div class="nav-shell">
+  <header class="nav">
+    <a href="#top" class="nav-logo" aria-label="eelate home"><img src="assets/eelate-logo.png" alt="eelate" width="117" height="22"></a>
+    <nav aria-label="Main" class="nav-links">
+      <a href="#collection" class="nav-item">Collection</a>
+      <a href="#colour" class="nav-item">Colours</a>
+      <a href="#table" class="nav-item">At the table</a>
+      <a href="#branding" class="nav-item">Custom branding</a>
+    </nav>
+    <div class="nav-right">
+      <a href="#trade" class="btn btn-sm">Trade enquiry<span class="dot"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <details class="mnav">
+        <summary aria-label="Menu"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.6" stroke-linecap="round"><path d="M4 9h16M4 15h16"/></svg></summary>
+        <nav aria-label="Mobile" class="mnav-panel">
+          <a href="#collection">Collection</a>
+          <a href="#range">Range &amp; sizes</a>
+          <a href="#colour">Colours</a>
+          <a href="#table">At the table</a>
+          <a href="#branding">Custom branding</a>
+          <a href="#trade">Trade enquiry</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+</div>
+
+<!-- Hero -->
+<section id="top" class="hero">
+  <p class="eyebrow in"><span class="dots" aria-hidden="true"><span data-eye style="background:var(--stone)"></span><span data-eye style="background:var(--charcoal)"></span><span data-eye style="background:var(--slate)"></span></span>Silicone stoneware for hospitality</p>
+  <h1 class="h-xl in d2">Every meal, <em>a celebration.</em></h1>
+  <p class="lead in d3">Elegant tableware in natural stone tones. Unbreakable, non-slip and insulating, and handmade for the busiest service.</p>
+  <div class="actions in d4">
+    <a href="#trade" class="btn">Request samples<span class="dot"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    <a href="#collection" class="link">View the collection<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+  <div class="stage-wrap in">
+    <div class="stage">
+      <img class="slide on" data-i="0" src="assets/hero-charcoal.webp" alt="eelate pots in stone grey, charcoal and slate on a marble plinth" width="1983" height="793" fetchpriority="high">
+      <img class="slide" data-i="1" src="assets/hero-terracotta.webp" alt="eelate pots in sand, terracotta and clay on a stone plinth" width="1983" height="793" loading="lazy" aria-hidden="true">
+      <img class="slide" data-i="2" src="assets/hero-olive.webp" alt="eelate pots in terracotta, olive and sand on a stone plinth" width="1983" height="793" loading="lazy" aria-hidden="true">
+      <img class="slide" data-i="3" src="assets/hero-slate.webp" alt="eelate pots in sand, slate and charcoal on a marble plinth" width="1983" height="793" loading="lazy" aria-hidden="true">
+    </div>
+    <div class="swatches" role="group" aria-label="Colourways">
+      <button type="button" class="swatch" data-i="0" aria-pressed="true"><span class="dots" aria-hidden="true"><span style="background:var(--stone)"></span><span style="background:var(--charcoal)"></span><span style="background:var(--slate)"></span></span>Charcoal</button>
+      <button type="button" class="swatch" data-i="1" aria-pressed="false"><span class="dots" aria-hidden="true"><span style="background:var(--sand)"></span><span style="background:var(--terracotta)"></span><span style="background:var(--clay)"></span></span>Terracotta</button>
+      <button type="button" class="swatch" data-i="2" aria-pressed="false"><span class="dots" aria-hidden="true"><span style="background:#E08A62"></span><span style="background:var(--olive)"></span><span style="background:#EDE3C8"></span></span>Olive</button>
+      <button type="button" class="swatch" data-i="3" aria-pressed="false"><span class="dots" aria-hidden="true"><span style="background:var(--sand)"></span><span style="background:var(--slate)"></span><span style="background:var(--charcoal)"></span></span>Slate</button>
+    </div>
+  </div>
+  <p class="proof">On the tables of Isle de Pan and Fancourt</p>
+</section>
+
+<!-- Statement -->
+<section class="statement">
+  <p class="rtext">Every meal should be a celebration. Tableware that belongs on the finest tables, <em>and is tough enough for the kitchens behind them.</em></p>
+</section>
+
+<!-- Benefits (from the eelate flyer) -->
+<section class="benefits" aria-labelledby="benefits-h">
+  <h2 id="benefits-h" class="label">Tableware that is</h2>
+  <ul class="bgrid">
+    <li class="reveal"><h3>Elegant</h3><p>Soft, rounded forms in natural stone tones.</p></li>
+    <li class="reveal"><h3>Unbreakable</h3><p>Built for drops and knocks, season after season.</p></li>
+    <li class="reveal"><h3>Non-slip</h3><p>The grip is in the material, so pieces stay put.</p></li>
+    <li class="reveal"><h3>Insulating</h3><p>Keeps hot food warmer for longer.</p></li>
+    <li class="reveal"><h3>Durable</h3><p>Made for the pace of daily service.</p></li>
+    <li class="reveal"><h3>Non-chipping</h3><p>No chipped rims to replace.</p></li>
+    <li class="reveal"><h3>Scratch-resistant</h3><p>Holds its finish through everyday use.</p></li>
+    <li class="reveal"><h3>Dishwasher safe</h3><p>Straight into the dishwasher after service.</p></li>
+    <li class="reveal"><h3>Handmade</h3><p>Every piece is made by hand.</p></li>
+  </ul>
+</section>
+
+<!-- Story: stone -->
+<section class="sec">
+  <div class="wrap" style="position:relative;z-index:1">
+    <h2 class="h-l rtext">Made to be <em>noticed.</em></h2>
+  </div>
+  <div class="story-a">
+    <img class="drift" src="assets/story-trio.webp" alt="eelate pots in terracotta, olive and sand on a stone plinth" width="1983" height="793" loading="lazy">
+    <div class="copy">
+      <p class="lead rtext">The quiet highlight of every table. Soft, rounded silicone stoneware in <strong>natural stone tones</strong>: charcoal, slate, terracotta, olive and more.</p>
+      <a href="#colour" class="link">Explore the colours<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- Collection -->
+<section id="collection" class="wrap sec">
+  <h2 class="h-m rtext">Pieces for <em>every course.</em></h2>
+  <div class="cgrid">
+    <article class="card reveal">
+      <div class="card-img"><img src="assets/ramekin-charcoal.webp" alt="Charcoal ramekin" width="412" height="360" loading="lazy"></div>
+      <div class="card-head"><h3>Ramekins</h3><span class="chips" aria-label="Stone colours"><span style="background:var(--charcoal)"></span><span style="background:var(--terracotta)"></span><span style="background:var(--sand)"></span></span></div>
+      <p>Five sizes, from 30 ml to 165 ml.</p>
+    </article>
+    <article class="card reveal">
+      <div class="card-img"><img src="assets/dish-stone.webp" alt="Stone-grey side bowl holding butter" width="736" height="659" loading="lazy"></div>
+      <div class="card-head"><h3>Side dish bowls</h3><span class="chips" aria-label="Stone colours"><span style="background:var(--stone)"></span><span style="background:var(--slate)"></span><span style="background:var(--olive)"></span></span></div>
+      <p>105, 140 and 155 mm, for sides and sharing.</p>
+    </article>
+    <article class="card reveal">
+      <div class="card-img"><img src="assets/jug-charcoal.webp" alt="Charcoal milk jug" width="596" height="745" loading="lazy"></div>
+      <div class="card-head"><h3>Milk &amp; sauce jugs</h3><span class="chips" aria-label="Stone colours"><span style="background:var(--charcoal)"></span><span style="background:var(--clay)"></span></span></div>
+      <p>Cream, sauce, syrup and milk, 50 to 120 ml.</p>
+    </article>
+    <article class="card reveal">
+      <div class="card-img"><img src="assets/egg-charcoal.webp" alt="Charcoal egg cup" width="423" height="425" loading="lazy"></div>
+      <div class="card-head"><h3>Egg cups</h3><span class="chips" aria-label="Stone colours"><span style="background:var(--charcoal)"></span><span style="background:var(--terracotta)"></span><span style="background:var(--stone)"></span></span></div>
+      <p>The breakfast-service signature, with egg crackers to match.</p>
+    </article>
+    <article class="card reveal">
+      <div class="card-img"><img src="assets/coaster-crest.webp" alt="Black coaster with a debossed venue crest" width="841" height="784" loading="lazy"></div>
+      <div class="card-head"><h3>Coasters</h3><span class="tag">Brandable</span></div>
+      <p>Small and large, with your venue's mark.</p>
+    </article>
+  </div>
+
+  <!-- Range & sizes (from the October 2026 catalogue) -->
+  <div id="range" class="range">
+    <div class="range-intro">
+      <h3 class="h-m" style="font-size:clamp(28px,3vw,40px)">The full <em>range.</em></h3>
+      <p class="lead">Every piece below is made in our stone tones. Download the catalogue for dimensions and drawings of each item.</p>
+      <div class="actions">
+        <a href="assets/eelate-catalogue-oct-2026.pdf" class="btn" download>Download catalogue<span class="dot"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v12M6 11l6 6 6-6M5 20h14"/></svg></span></a>
+      </div>
+    </div>
+    <table class="rtable">
+      <caption class="label" style="caption-side:top;text-align:left;padding-bottom:16px;color:var(--soft)">Catalogue, October 2026</caption>
+      <tbody>
+        <tr><th scope="row">Ramekins</th><td>30, 50, 80, 120 and 165 ml</td></tr>
+        <tr><th scope="row">Relliptical tapas plates</th><td>X-Small 139 × 99 mm · Small 169 × 119 mm · Medium 200 × 140 mm</td></tr>
+        <tr><th scope="row">Side dish bowls</th><td>105, 140 and 155 mm</td></tr>
+        <tr><th scope="row">Sushi dish</th><td>Three compartments, 30 / 45 / 30 ml</td></tr>
+        <tr><th scope="row">Jugs</th><td>Cream 50 ml · Sauce 75 ml · Milk 120 ml</td></tr>
+        <tr><th scope="row">Coasters</th><td>Small Ø73 mm · Large Ø103 mm</td></tr>
+        <tr><th scope="row">Egg cups &amp; egg crackers</th><td>Stone tones, or jellytot colours</td></tr>
+        <tr><th scope="row">Butter &amp; chocolate moulds</th><td>Ask us for current sizes</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Story: sharing -->
+<section class="sec">
+  <div class="story-b">
+    <img class="drift-b" src="assets/sharing.webp" alt="Terracotta, olive and sand eelate pots holding dips on a stone table" width="1200" height="1200" loading="lazy">
+    <div class="copy">
+      <h2 class="h-l rtext" style="font-size:clamp(40px,4.4vw,68px);margin-bottom:24px">Made for <em>sharing.</em></h2>
+      <p class="lead rtext">Dips, tapas and aperitivo, served the way they deserve. Calm stone tones that let the food bring the colour to the <strong>centre of the table.</strong></p>
+      <a href="#table" class="link">See them at the table<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- At the table -->
+<section id="table" class="wrap sec">
+  <div class="ghead">
+    <h2 class="h-m rtext">At the <em>table.</em></h2>
+    <p class="lead rtext">Tapas, dips and aperitivo, in stone tones that suit any room.</p>
+  </div>
+  <div class="gallery">
+    <img class="reveal" src="assets/table-a.webp" alt="Charcoal, terracotta and stone-grey pots with ricotta, tapenade and artichokes" width="1200" height="1200" loading="lazy">
+    <img class="reveal" src="assets/table-c.webp" alt="Slate, terracotta and sand pots with olives, romesco and aioli on a dark wood table" width="1200" height="1200" loading="lazy">
+    <img class="reveal" src="assets/table-d.webp" alt="Charcoal, olive and terracotta pots with aioli, taramasalata and olives beside grilled prawns" width="1200" height="1200" loading="lazy">
+    <img class="reveal" src="assets/table-b.webp" alt="Clay, slate and sand pots with dips beside dolmades, feta and flatbread" width="1200" height="1200" loading="lazy">
+  </div>
+</section>
+
+<!-- Colours -->
+<section id="colour" class="wrap sec center colour">
+  <h2 class="h-m rtext">Natural <em>stone tones.</em></h2>
+  <p class="lead rtext">Every piece in the range comes in our stone colours. Keep to one, or mix them across the table.</p>
+  <ul class="slist" aria-label="Stone colours">
+    <li class="reveal"><div class="pot"><img src="assets/sw-charcoal.webp" alt="" width="412" height="360" loading="lazy"></div><span>Charcoal</span></li>
+    <li class="reveal"><div class="pot"><img src="assets/sw-slate.webp" alt="" width="412" height="360" loading="lazy"></div><span>Slate</span></li>
+    <li class="reveal"><div class="pot"><img src="assets/sw-stone.webp" alt="" width="412" height="360" loading="lazy"></div><span>Stone Grey</span></li>
+    <li class="reveal"><div class="pot"><img src="assets/sw-sand.webp" alt="" width="412" height="360" loading="lazy"></div><span>Sand</span></li>
+    <li class="reveal"><div class="pot"><img src="assets/sw-terracotta.webp" alt="" width="412" height="360" loading="lazy"></div><span>Terracotta</span></li>
+    <li class="reveal"><div class="pot"><img src="assets/sw-clay.webp" alt="" width="412" height="360" loading="lazy"></div><span>Earth Brown</span></li>
+    <li class="reveal"><div class="pot"><img src="assets/sw-olive.webp" alt="" width="412" height="360" loading="lazy"></div><span>Olive</span></li>
+  </ul>
+  <p class="fine">These products are handmade. Slight variations in colour and texture may occur.</p>
+</section>
+
+<!-- Built for service -->
+<section id="service" class="wrap sec">
+  <div class="split" style="flex-wrap:wrap-reverse">
+    <div><img class="service-img reveal" src="assets/service.webp" alt="Charcoal, olive and terracotta pots with pâté, cornichons and onion marmalade at a wine bar" width="1200" height="1200" loading="lazy"></div>
+    <div>
+      <h2 class="h-m rtext">The look of stoneware. <em>Built for service.</em></h2>
+      <div class="feat">
+        <div><h3>Unbreakable</h3><p>Built for drops, knocks and the busiest service, season after season.</p></div>
+        <div><h3>Insulating</h3><p>A natural thermal insulator that keeps food warmer for longer.</p></div>
+        <div><h3>Non-slip</h3><p>The grip comes from the material itself, so pieces stay put on trays and tables.</p></div>
+        <div><h3>Non-chipping &amp; dishwasher safe</h3><p>No chipped rims, and straight into the dishwasher after service.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Custom branding -->
+<section id="branding" class="wrap sec">
+  <div class="split">
+    <div class="brand-copy">
+      <h2 class="h-m rtext">Your mark, <em>on every table.</em></h2>
+      <p class="lead rtext">Your crest, logo or monogram on coasters and selected pieces, in the stone tone of your choice. Minimum order: 25.</p>
+      <div><a href="#trade" class="btn">Discuss a branded range<span class="dot"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></div>
+    </div>
+    <div class="brand-art"><img class="reveal" src="assets/coaster-floating.webp" alt="Black coaster debossed with a venue crest" width="841" height="784" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- Jellytot: egg cups & egg crackers only -->
+<section id="jellytot" class="wrap sec">
+  <div class="jelly reveal">
+    <h2 class="label">Jellytot</h2>
+    <p class="h-m" style="margin-top:16px;font-size:clamp(30px,3.6vw,48px)">A little colour <em>at breakfast.</em></p>
+    <p class="lead">Our egg cups and egg crackers also come in bright jellytot colours. Everything else in the range is made in stone tones.</p>
+    <ul class="jlist" aria-label="Jellytot egg cup colours">
+      <li><img src="assets/egg-lemon.webp" alt="" width="423" height="425" loading="lazy"><span>Lemon</span></li>
+      <li><img src="assets/egg-seagreen.webp" alt="" width="423" height="425" loading="lazy"><span>Sea Green</span></li>
+      <li><img src="assets/egg-sky.webp" alt="" width="423" height="425" loading="lazy"><span>Sky</span></li>
+      <li><img src="assets/egg-coral.webp" alt="" width="423" height="425" loading="lazy"><span>Coral</span></li>
+      <li><img src="assets/egg-blush.webp" alt="" width="386" height="368" loading="lazy"><span>Blush</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- Process -->
+<section class="wrap sec" style="max-width:1120px">
+  <h2 class="h-m rtext center" style="font-size:clamp(32px,3.4vw,46px)">Supplying <em>your venue.</em></h2>
+  <ol class="steps">
+    <li class="reveal"><span class="n">01</span><h3>Request samples</h3><p>Tell us about your venue and we'll send the catalogue and a sample set.</p></li>
+    <li class="reveal"><span class="n">02</span><h3>Curate your table</h3><p>Choose pieces and stone tones, with optional custom branding.</p></li>
+    <li class="reveal"><span class="n">03</span><h3>Supply &amp; reorder</h3><p>Delivered to your door. Lead time: 10 working days.</p></li>
+  </ol>
+</section>
+
+<!-- Trade enquiry -->
+<section id="trade" class="wrap" style="padding-bottom:120px">
+  <div class="trade reveal">
+    <img class="trade-deco" src="assets/egg-sand.webp" alt="" aria-hidden="true" width="386" height="368" loading="lazy">
+    <div class="trade-copy">
+      <h2 class="h-m rtext">Let's set <em>your table.</em></h2>
+      <p class="lead rtext">Share a few details and we'll come back to you with trade pricing, samples and availability.</p>
+      <div class="contact">
+        <a href="mailto:info@eelate.com">info@eelate.com</a>
+        <a href="https://wa.me/27762258310">WhatsApp: +27 76 225 8310</a>
+        <span style="color:#4A4A4A">George Showroom</span>
+      </div>
+    </div>
+    <form class="form" aria-label="Trade enquiry">
+      <label>Full name<input type="text" name="name" autocomplete="name"></label>
+      <label>Venue name<input type="text" name="venue" autocomplete="organization"></label>
+      <label>Email<input type="email" name="email" autocomplete="email" inputmode="email"></label>
+      <label>Phone<input type="tel" name="phone" autocomplete="tel" inputmode="tel"></label>
+      <label class="full">What are you looking for?<textarea name="message" rows="2"></textarea></label>
+      <div class="full" style="padding-top:8px"><button type="submit" class="btn">Send enquiry<span class="dot"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button></div>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-brand"><img src="assets/eelate-logo.png" alt="eelate" width="96" height="18" loading="lazy"><span>Silicone stoneware</span></div>
+  <nav aria-label="Footer">
+    <a href="#collection">Collection</a>
+    <a href="assets/eelate-catalogue-oct-2026.pdf" download>Catalogue (PDF)</a>
+    <a href="#trade">Trade</a>
+    <a href="mailto:info@eelate.com">info@eelate.com</a>
+  </nav>
+  <span>© 2026 eelate</span>
+</footer>
+
+</div>
+<script>
+(function(){
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var COLS = [['--stone','--charcoal','--slate'],['--sand','--terracotta','--clay'],['#E08A62','--olive','#EDE3C8'],['--sand','--slate','--charcoal']];
+  var slides = document.querySelectorAll('.slide'), btns = document.querySelectorAll('.swatch'), eyes = document.querySelectorAll('[data-eye]');
+  var n = slides.length, cur = 0, timer;
+  function c(v){ return v.charAt(0) === '-' ? 'var(' + v + ')' : v; }
+  function show(i){
+    cur = (i % n + n) % n;
+    slides.forEach(function(el){ var on = +el.dataset.i === cur; el.classList.toggle('on', on); el.setAttribute('aria-hidden', on ? 'false' : 'true'); if (on) el.loading = 'eager'; });
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', +b.dataset.i === cur); });
+    eyes.forEach(function(d, j){ d.style.background = c(COLS[cur][j]); });
+  }
+  function start(){ clearInterval(timer); if (!reduce) timer = setInterval(function(){ show(cur + 1); }, 5200); }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ show(+b.dataset.i); start(); }); });
+  start();
+
+  var menu = document.querySelector('.mnav');
+  document.querySelectorAll('.mnav a').forEach(function(a){ a.addEventListener('click', function(){ menu.removeAttribute('open'); }); });
+  document.addEventListener('click', function(e){ if (menu.open && !menu.contains(e.target)) menu.removeAttribute('open'); });
+
+  // Staging: the form is not connected yet.
+  var f = document.querySelector('.form');
+  f.addEventListener('submit', function(e){ e.preventDefault(); f.querySelector('button').firstChild.textContent = 'Preview only — form not connected'; });
+})();
+</script>
+</body>
+</html>
