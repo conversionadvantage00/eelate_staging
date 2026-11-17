@@ -110,8 +110,9 @@ h1 em,h2 em,p em{font-style:normal;font-weight:300}
 /* collection */
 .cgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:56px 32px;margin-top:72px}
 .card{display:flex;flex-direction:column;gap:12px}
-.card-img{height:260px;display:flex;align-items:flex-end;justify-content:center;padding-bottom:28px}
-.card-img img{max-width:82%;max-height:180px;width:auto;height:auto;filter:drop-shadow(0 26px 22px rgba(17,17,17,.15))}
+.card-img{--px:1.95px;height:230px;display:flex;align-items:flex-end;justify-content:center;padding-bottom:32px;position:relative}
+.card-img::after{content:"";position:absolute;left:50%;bottom:24px;width:calc(var(--px)*120);max-width:90%;height:14px;transform:translateX(-50%);border-radius:50%;background:radial-gradient(closest-side,rgba(17,17,17,.16),transparent)}
+.card-img img{position:relative;z-index:1;width:calc(var(--mm)*var(--px));max-width:92%;height:auto}
 .card-head{display:flex;justify-content:space-between;align-items:center;gap:12px}
 .card h3{font-size:18px;font-weight:600}
 .card p{font-size:15px;line-height:1.6;color:var(--muted)}
@@ -243,8 +244,8 @@ h1 em,h2 em,p em{font-style:normal;font-weight:300}
   .bgrid h3{font-size:16px}
   .bgrid p{font-size:14px}
   .cgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:40px 16px;margin-top:48px}
-  .card-img{height:170px;padding-bottom:18px}
-  .card-img img{max-height:120px}
+  .card-img{--px:1.15px;height:128px;padding-bottom:22px}
+  .card-img::after{bottom:15px;height:10px}
   .card h3{font-size:16px}
   .card p{font-size:14px}
   .card-head{flex-wrap:wrap;gap:6px}
@@ -373,27 +374,27 @@ h1 em,h2 em,p em{font-style:normal;font-weight:300}
   <h2 class="h-m rtext">Pieces for <em>every course.</em></h2>
   <div class="cgrid">
     <article class="card reveal">
-      <div class="card-img"><img src="assets/ramekin-charcoal.webp" alt="Charcoal ramekin" width="412" height="360" loading="lazy"></div>
+      <div class="card-img"><img src="assets/side-ramekin.webp" alt="Charcoal ramekin, side view" width="622" height="390" style="--mm:62" loading="lazy"></div>
       <div class="card-head"><h3>Ramekins</h3><span class="chips" aria-label="Stone colours"><span style="background:var(--charcoal)"></span><span style="background:var(--terracotta)"></span><span style="background:var(--sand)"></span></span></div>
       <p>Five sizes, from 30 ml to 165 ml.</p>
     </article>
     <article class="card reveal">
-      <div class="card-img"><img src="assets/dish-stone.webp" alt="Stone-grey side bowl holding butter" width="736" height="659" loading="lazy"></div>
-      <div class="card-head"><h3>Side dish bowls</h3><span class="chips" aria-label="Stone colours"><span style="background:var(--stone)"></span><span style="background:var(--slate)"></span><span style="background:var(--olive)"></span></span></div>
+      <div class="card-img"><img src="assets/side-bowl.webp" alt="Terracotta side dish bowl, side view" width="764" height="303" style="--mm:108" loading="lazy"></div>
+      <div class="card-head"><h3>Side dish bowls</h3><span class="chips" aria-label="Stone colours"><span style="background:var(--terracotta)"></span><span style="background:var(--stone)"></span><span style="background:var(--slate)"></span></span></div>
       <p>105, 140 and 155 mm, for sides and sharing.</p>
     </article>
     <article class="card reveal">
-      <div class="card-img"><img src="assets/jug-charcoal.webp" alt="Charcoal milk jug" width="596" height="745" loading="lazy"></div>
-      <div class="card-head"><h3>Milk &amp; sauce jugs</h3><span class="chips" aria-label="Stone colours"><span style="background:var(--charcoal)"></span><span style="background:var(--clay)"></span></span></div>
+      <div class="card-img"><img src="assets/side-jug.webp" alt="Olive milk jug, side view" width="508" height="453" style="--mm:68" loading="lazy"></div>
+      <div class="card-head"><h3>Milk &amp; sauce jugs</h3><span class="chips" aria-label="Stone colours"><span style="background:var(--olive)"></span><span style="background:var(--charcoal)"></span><span style="background:var(--clay)"></span></span></div>
       <p>Cream, sauce, syrup and milk, 50 to 120 ml.</p>
     </article>
     <article class="card reveal">
-      <div class="card-img"><img src="assets/egg-charcoal.webp" alt="Charcoal egg cup" width="423" height="425" loading="lazy"></div>
-      <div class="card-head"><h3>Egg cups</h3><span class="chips" aria-label="Stone colours"><span style="background:var(--charcoal)"></span><span style="background:var(--terracotta)"></span><span style="background:var(--stone)"></span></span></div>
+      <div class="card-img"><img src="assets/side-eggcup.webp" alt="Sand egg cup, side view" width="452" height="348" style="--mm:48" loading="lazy"></div>
+      <div class="card-head"><h3>Egg cups</h3><span class="chips" aria-label="Stone colours"><span style="background:var(--sand)"></span><span style="background:var(--charcoal)"></span><span style="background:var(--terracotta)"></span></span></div>
       <p>The breakfast-service signature, with egg crackers to match.</p>
     </article>
     <article class="card reveal">
-      <div class="card-img"><img src="assets/coaster-crest.webp" alt="Black coaster with a debossed venue crest" width="841" height="784" loading="lazy"></div>
+      <div class="card-img"><img src="assets/side-coaster.webp" alt="Slate coaster, side view" width="918" height="162" style="--mm:103" loading="lazy"></div>
       <div class="card-head"><h3>Coasters</h3><span class="tag">Brandable</span></div>
       <p>Small and large, with your venue's mark.</p>
     </article>
@@ -497,8 +498,7 @@ h1 em,h2 em,p em{font-style:normal;font-weight:300}
 <!-- Jellytot: egg cups & egg crackers only -->
 <section id="jellytot" class="wrap sec">
   <div class="jelly reveal">
-    <h2 class="label">Jellytot</h2>
-    <p class="h-m" style="margin-top:16px;font-size:clamp(30px,3.6vw,48px)">A little colour <em>at breakfast.</em></p>
+    <h2 class="h-m" style="font-size:clamp(30px,3.6vw,48px)">A little colour <em>at breakfast.</em></h2>
     <p class="lead">Our egg cups and egg crackers also come in bright jellytot colours. Everything else in the range is made in stone tones.</p>
     <ul class="jlist" aria-label="Jellytot egg cup colours">
       <li><img src="assets/egg-lemon.webp" alt="" width="423" height="425" loading="lazy"><span>Lemon</span></li>
